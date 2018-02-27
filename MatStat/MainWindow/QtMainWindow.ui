@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1315</width>
+    <height>635</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Робота з даними</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>10</y>
+      <width>411</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_2">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>20</y>
+      <width>401</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushBtn_make_hist">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>310</y>
+      <width>121</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Гістограма</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>310</y>
+      <width>121</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Функція розподілу</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>0</y>
+      <width>20</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>340</y>
+      <width>1301</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_Loaded_data_from_file">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>311</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustIgnored</enum>
+    </property>
+    <property name="rowCount">
+     <number>2</number>
+    </property>
+    <property name="columnCount">
+     <number>3</number>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>97</number>
+    </attribute>
+    <row/>
+    <row/>
+    <column>
+     <property name="text">
+      <string>X, Дані</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>N, Кількість</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>P, Ймовірність</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_Chisl_haract">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>761</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="rowCount">
+     <number>18</number>
+    </property>
+    <property name="columnCount">
+     <number>4</number>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>200</number>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column>
+     <property name="text">
+      <string>Величини</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Нижня оцінка</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Оцінка</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Верхня оцінка</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="font">
+      <font>
+       <italic>false</italic>
+      </font>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>Середнє арефметичне</string>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string> Усічене середнє</string>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="text">
+      <string>Медіана</string>
+     </property>
+    </item>
+    <item row="4" column="0">
+     <property name="text">
+      <string>Медіана середніх Уолша</string>
+     </property>
+    </item>
+    <item row="5" column="0">
+     <property name="text">
+      <string>МАД</string>
+     </property>
+    </item>
+    <item row="6" column="0">
+     <property name="text">
+      <string>Незсунена дисперсія</string>
+     </property>
+    </item>
+    <item row="7" column="0">
+     <property name="text">
+      <string>Зсунена дисперсія</string>
+     </property>
+    </item>
+    <item row="8" column="0">
+     <property name="text">
+      <string>Незс. Сер. квад. відхилення</string>
+     </property>
+    </item>
+    <item row="9" column="0">
+     <property name="text">
+      <string>Зсунене сер. квад. відхилення</string>
+     </property>
+    </item>
+    <item row="10" column="0">
+     <property name="text">
+      <string>Коеф. асиметрії</string>
+     </property>
+    </item>
+    <item row="11" column="0">
+     <property name="text">
+      <string>Коеф. асиметрії зсунений</string>
+     </property>
+    </item>
+    <item row="12" column="0">
+     <property name="text">
+      <string>Коефіцієнт ексцесу, зсунений</string>
+     </property>
+    </item>
+    <item row="13" column="0">
+     <property name="text">
+      <string>Коефіцієнт ексцесу, незсунений</string>
+     </property>
+    </item>
+    <item row="14" column="0">
+     <property name="text">
+      <string>Коефіцієнт контрексцесу</string>
+     </property>
+    </item>
+    <item row="15" column="0">
+     <property name="text">
+      <string>Коефіцієнт варіації Пірсона</string>
+     </property>
+    </item>
+    <item row="16" column="0">
+     <property name="text">
+      <string>Мінімум</string>
+     </property>
+    </item>
+    <item row="17" column="0">
+     <property name="text">
+      <string>Максимум</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>350</y>
+      <width>16</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_loharifm">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>370</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Логарифмування</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_standartizaciya">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>400</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Стандартизація</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_back_to_start">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>430</y>
+      <width>171</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Повернутись до початкового</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_clear_graphs">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>460</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Очистити сітки</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_chec_box_run">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>560</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Відтворити</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>350</y>
+      <width>20</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_take_alpha">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>410</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>410</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Альфа значення</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="countClasses">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>370</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>370</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Кількість класів</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1315</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Tools">
+    <property name="title">
+     <string>&amp;Tools</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <widget class="QMenu" name="menuAbout">
+     <property name="title">
+      <string>About</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionAbout_software"/>
+     <addaction name="actionAbout_developer"/>
+    </widget>
+    <addaction name="menuAbout"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Tools"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAbout_software">
+   <property name="text">
+    <string>About software</string>
+   </property>
+  </action>
+  <action name="actionAbout_developer">
+   <property name="text">
+    <string>About developer</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
